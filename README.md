@@ -49,6 +49,7 @@ Ejecuta el siguiente comando para obtener la imagen oficial de keycloak:
 docker run -p 8080:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:26.1.1 start-dev
 ```
 Luego abre keycloak desde Docker en el puerto 8080.
+
 ![alt text](<assets/docker keycloak start.jpg>)
 
 
@@ -56,20 +57,24 @@ Luego abre keycloak desde Docker en el puerto 8080.
 1. Inicia sesión en **http://localhost:8080/** con:
    - Usuario: `admin`
    - Contraseña: `admin`
+     
 ![alt text](<assets/keycloak sign in.jpg>)
 
 2. Crea un nuevo **Reino** llamado: `CybersecurityRealm`.
+   
    ![alt text](<assets/realm creation.jpg>)
 
 ### **1.3. Crear Cliente OAuth2**
 1. Ve a **Clientes** > **Crear Cliente**.
 2. **Client ID**: `api-client`
 3. **Protocolo**: `OpenID Connect`
+   
    ![alt text](<assets/keycloak create client.jpg>)
 
-4. **Tipo de Acceso**: `Confidential`
-5. **Habilita Direct Access Grants**
-6. Guarda los cambios.
+5. **Tipo de Acceso**: `Confidential`
+6. **Habilita Direct Access Grants**
+7. Guarda los cambios.
+   
    ![alt text](<assets/keycloak client config.jpg>)
 
 ### **1.4. Crear un Usuario de Prueba**
@@ -77,11 +82,13 @@ Luego abre keycloak desde Docker en el puerto 8080.
 2. **Username**: `testuser`
 3. **Email**: `testuser@example.com`
 4. **Email Verified**: ✅ **Activado**
+   
    ![alt text](<assets/keycloak create user.jpg>)
 
-5. **Contraseña**:
+6. **Contraseña**:
    - Ve a **Credenciales**, asigna una contraseña (`password`).
    - Desactiva **"Temporary Password"**.
+     
       ![alt text](<assets/keycloak user credentials.jpg>)
 
 ---
