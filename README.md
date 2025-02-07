@@ -1,4 +1,9 @@
 
+
+---
+
+## **`README.md`** 📄
+
 ```md
 # **Ejercicio - Autenticación con Keycloak y Node.js**
 
@@ -8,13 +13,12 @@
 **Seguridad en Sistemas de Computación**  
 
 ## **Integrantes**
-
+- **José Auyón** - 201579  
 - **María Ramírez** - 21342  
 - **Gustavo González** - 21438  
 - **Renatto Guzmán** - 21646  
 - **Diego Leiva** - 21752  
-- **Pablo Orellana** - 21970
-- **José Auyón** - 201579  
+- **Pablo Orellana** - 21970  
 
 ---
 
@@ -122,6 +126,20 @@ Para acceder a los endpoints protegidos, primero debes obtener un **token de acc
 | `/public`  | `GET`  | ❌ No         | Endpoint accesible sin autenticación. |
 | `/private` | `GET`  | ✅ Sí         | Solo accesible con un token válido. |
 | `/data`    | `POST` | ✅ Sí         | Recibe datos en JSON, requiere autenticación. |
+
+---
+
+## 🔹 **6. `.gitignore` (Evitar subir archivos sensibles)**
+Crea un archivo `.gitignore` y asegúrate de incluir:
+
+```
+node_modules/
+.env
+logs/
+package-lock.json
+.vscode/
+.DS_Store
+```
 
 ---
 
