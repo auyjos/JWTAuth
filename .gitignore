@@ -1,0 +1,38 @@
+# Node.js dependencies (No subir la carpeta node_modules)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+
+
+# Logs y caché
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.gz
+*.tgz
+
+# Directorios generados en desarrollo
+dist/
+build/
+coverage/
+.cache/
+.tmp/
+
+# Archivos de Keycloak (si guardas configuraciones exportadas)
+keycloak-realm.json
+keycloak.json
+
+# Configuración de editores de código (VS Code, JetBrains)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
