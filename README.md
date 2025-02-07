@@ -1,10 +1,6 @@
 
 
----
 
-## **`README.md`** 📄
-
-```md
 # **Ejercicio - Autenticación con Keycloak y Node.js**
 
 **Universidad del Valle de Guatemala**  
